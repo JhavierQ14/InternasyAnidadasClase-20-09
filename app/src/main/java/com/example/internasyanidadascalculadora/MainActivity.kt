@@ -1,5 +1,6 @@
 package com.example.internasyanidadascalculadora
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -96,4 +97,10 @@ class MainActivity : AppCompatActivity() {
         tv_Resultado.setText(resultado)
     }
 
+
+    fun btnSiguiente(vista: View){
+        val VentanaSiguiente:Intent = Intent(applicationContext,ListViewApp::class.java)
+        startActivity(VentanaSiguiente)
+
+    }
 }
